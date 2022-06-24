@@ -1,0 +1,15 @@
+.user {
+  margin: 10px 0px;
+
+  .user-button {
+    width: 100%;
+    height: 30px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+
+    &:hover {
+      background-color: #e8dada;
+    }
+  }
+}

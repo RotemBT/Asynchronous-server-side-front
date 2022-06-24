@@ -1,0 +1,10 @@
+.header {
+  grid-area: header;
+  display: flex;
+  align-items: center;
+  height: 60px;
+  background-image: linear-gradient(black, #7f2d2d);
+  color: white;
+  text-align: left;
+  padding-left: 20px;
+}
