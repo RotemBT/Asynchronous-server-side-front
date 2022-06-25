@@ -12,4 +12,5 @@ export const ROUTES = {
         ADD_USER: '/users/api/add'
     }
 };
-export const URL = 'http://localhost:3001';
+// for local use http://localhost:3001
+export const URL = 'http://cost-manager-354417.uc.r.appspot.com';
