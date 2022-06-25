@@ -1,0 +1,28 @@
+.cost-container {
+  .navigator {
+    .navigator-button {
+      padding: 12px;
+      border-radius: 10px;
+      width: 100px;
+      border: none;
+      background-color: #84b284;
+      cursor: pointer;
+      color: white;
+      font-weight: bold;
+      margin-right: 30px;
+      &:hover {
+        background-color: #81d181;
+      }
+      &:active {
+        background-color: #67ab67;
+      }
+    }
+  }
+  .labels {
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+    transform: translateX(21.5%);
+    font-weight: 600;
+  }
+}

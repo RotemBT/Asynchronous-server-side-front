@@ -1,12 +1,11 @@
 import React from "react";
 import './user.styles.scss';
-const User = ({ text }) => {
+const User = ({ user, isSelected, onClickHandler }) => {
+    const classes = `user ${isSelected ? 'isSelected' : ''}`;
     return (
-        <div className="user">
-            <button className="user-button">
-                {text}
-            </button>
-        </div>
+        <button className={classes} onClick={() => onClickHandler(user)}>
+            {`${user.first_name} ${user.last_name}`}
+        </button>
     );
 };
 export default User;

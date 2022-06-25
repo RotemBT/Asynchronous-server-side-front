@@ -1,0 +1,28 @@
+.add-cost-text {
+  padding-top: 15px;
+}
+.add-cost-form {
+  .cost-input-field {
+    display: inline;
+    padding: 8px;
+    border-radius: 10px;
+    border: 1px solid #84b284;
+    margin: 15px;
+  }
+  .cost-submit-button {
+    padding: 12px;
+    border-radius: 10px;
+    width: 100px;
+    border: none;
+    background-color: #84b284;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    &:hover {
+      background-color: #81d181;
+    }
+    &:active {
+      background-color: #67ab67;
+    }
+  }
+}
