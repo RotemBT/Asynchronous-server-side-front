@@ -12,6 +12,13 @@ const CostContainer = () => {
     const [costs, setCosts] = useState([]);
     const [addCost, setAddCost] = useState(false);
 
+    const onClickGetAllCosts = async () => {
+        const url = `${URL}${ROUTES.COST.GET_COST}`;
+        const response = await fetch(url);
+        const data = await response.json();
+        console.log(`costs ${data}`);
+        setCosts(data);
+    };
     const onClickGetCosts = async () => {
         let url;
         if (Object.keys(ctx.selectedUser).length === 0) {
@@ -33,6 +40,7 @@ const CostContainer = () => {
             <div className="navigator">
                 <button className="navigator-button" onClick={() => setAddCost(true)}>Add cost</button>
                 <button className="navigator-button" onClick={onClickGetCosts}>Get costs</button>
+                <button className="navigator-button" onClick={onClickGetAllCosts}>Get All costs</button>
             </div>
             {addCost && <CostForm openModal={addCost} handleClose={() => setAddCost(false)} setAddCost={setAddCost} />}
             <div className="labels">
